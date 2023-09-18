@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="logo">
+					<a class="logo__link" href="#">
+						<img class="logo__link-img" src="images/logo.png"alt="logo">
+					</a>
+				</div>
+					<div class="toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+							<div id="mainmenu">
+								<ul>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="/">Аккаунт</a></li>
+									<li><a href="analiz.html">Анализы</a></li>
+									<li><a href="/">Новости</a></li>
+								</ul>
+							</div>
+					</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+
+	<div class="intro">
+		<div class="main">
+			<p class="blocktext">Здоровье — это главная ценность жизни, оно занимает самую высокую ступень в иерархии потребностей человека. Здоровье —
+			один из важнейших компонентов человеческого счастья и одно из ведущих условий успешного социального и экономического
+			развития. Именно поэтому важно следить за своим здоровьем не только, когда мы чувствуем недомогание, но и при отличном
+			самочувствии. Каждому человеку следует постоянно проходить профилактические осмотры и сдавать анализы. Наш сайт поможем
+			вам хранить все результаты ваших анализы, указывать результат нормы анализа, сравнивать анализы разных периодов и
+			показывать динамику изменений.</p>	
+		</div>
+		 <div class="attention">
+			<span></span>
+			<span></span>
+			<p class="attention-text"><b>ВНИМАНИЕ!</b></p>
+			<p class="attention-text">Информация данного сайта может быть использована лишь в качестве справочной или познавательной. Текст сайта не
+			является руководством по лечению и диагностике заболеваний, а несет в себе лишь познавательную информацию. Эта
+			информация не может быть использована в качестве научного материала, руководства по диагностике и лечению заболеваний -
+			это прерогатива специализированных учреждений, не представленных на данном интернет ресурсе. Сайт предоставляет
+			справочную информацию. Адекватная диагностика и лечение болезни возможны под наблюдением добросовестного врача.</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="fone">
+		<link rel="stylesheet" href="">
+	</div>
+
+	<div class="footer">
+		<div class="container__footer">
+			<div class="footer__inner">
+				<span></span>
+				<span></span>
+			</div>
+			<div id="footerText">
+				<ul>
+					<li class="firstTextFooter"><a href="#">Политика конфиденциальности</a></li>
+					<li class="secondTextFooter"><a href="#">Техническая поддержка</a></li>
+				</ul>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<div class="popup_close">
+					<div class="popup__title">ВНИМАНИЕ!</div>
+						<div class="popup__text">
+							 
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let menutoggle = document.querySelector('.toggle');
+		menutoggle.onclick = function() {
+			menutoggle.classList.toggle('active')
+		}
+		let footertoggle = document.querySelector('.container__footer');
+		footertoggle.onclick = function () {
+			footertoggle.classList.toggle('active')
+		}
+		let attention = document.querySelector('.attention');
+		attention.onclick = function () {
+			attention.classList.toggle('active')
+		}
+	</script>
+	<script>
+		function openMenu(){
+			document.getElementById("mainmenu").classList.toggle('active');
+		}
+	</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

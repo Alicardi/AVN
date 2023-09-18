@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <header>
+        <meta charset="UTF-8">
+		  <title>Doc</title>
+		  <style>
+			.class{
+				color: orange;
+			}
+			.name{
+				color: green;
+			}
+			.text{
+				color: lightblue;
+			}
+			pre{
+				width: 45%;
+				background-color: #161a1f;
+				color: rgb(132, 172, 185);
+			}
+			.nach{
+				color: rgb(159, 116, 199);
+			}
+			.pre2{
+				color: rgb(159, 116, 199);
+			}
+			.num{
+				color: rgb(217, 192, 241);;
+			}
+			.name2{
+				color: rgb(132, 172, 185);
+			}
+		  </style>
+    </header>
+    <body>
+
+        <h1>Документирование кода</h1>
+        <h2>Код HTML</h2>
+        <h3>Header</h3>
+        <p>Описание шапки страницы, на ней есть логотип и меню, с помощью которого можно перемещаться по страницам сайта</p>
+        <pre>		
+&lt;header <span class="class">class</span>=<span class="name">"header"</span>>
+	&lt;div <span class="class">class</span>=<span class="name">"container"</span>>
+		&lt;div <span class="class">class</span>=<span class="name">"header__inner"</span>>
+			&lt;div <span class="class">class</span>=<span class="name">"logo"</span>>
+				&lt;a <span class="class">class</span>=<span class="name">"logo__link"</span> <span class="class">href</span>=<span class="name">"#"</span>>
+					&lt;img <span class="class">class</span>=<span class="name">"logo__link-img"</span> <span class="class">src</span>=<span class="name">"images/logo.png"</span> <span class="class">alt</span>=<span class="name">"logo"</span>>
+				&lt;/a>
+			&lt;/div>
+			&lt;div <span class="class">class</span>=<span class="name">"toggle"</span>>
+				&lt;span>&lt;/span>
+				&lt;span>&lt;/span>
+				&lt;span>&lt;/span>
+				&lt;span>&lt;/span>
+				&lt;div <span class="class">id</span>=<span class="name">"mainmenu"</span>>
+					&lt;ul>
+						&lt;li>&lt;a <span class="class">href</span>=<span class="name">"index.html"</span>><span class="text">Главная</span>&lt;/a>&lt;/li>
+						&lt;li>&lt;a <span class="class">href</span>=<span class="name">"/"</span>><span class="text">Аккаунт</span>&lt;/a>&lt;/li>
+						&lt;li>&lt;a <span class="class">href</span>=<span class="name">"analiz.html"</span>><span class="text">Анализы</span>&lt;/a>&lt;/li>
+						&lt;li>&lt;a <span class="class">href</span>=<span class="name">"/"</span>><span class="text">Новости</span>&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/header>
+		  </pre>
+        <h3>Map</h3>
+        <p><b>Интегрированная карта,</b> кнопки, с помощью которых можно пользоваться приложением</p>
+		<pre>
+&lt;div <span class="class">class</span>=<span class="name">"fone"</span>>
+	&lt;div <span class="class">class</span>=<span class="name">"main"</span>>
+		&lt;div <span class="class">class</span>=<span class="name">"map"</span>>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;button <span class="class">class</span>=<span class="name">"block1"</span>><span class="text">Запись Анализов</span>&lt;/button>&lt;/span>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;button <span class="class">class</span>=<span class="name">"block2"</span>><span class="text">Сравнение Анализов</span>&lt;/button>&lt;/span>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;button <span class="class">class</span>=<span class="name">"block3"</span>><span class="text">Динамика Анализов</span>&lt;/button>&lt;/span>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;/span>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+		</pre>
+        <h3>Popup</h3>
+        <p><b>Всплывающее окно</b> для заполнения анализов</p>
+		<pre>
+&lt;div <span class="class">class</span>=<span class="name">"popup"</span>>
+	&lt;div <span class="class">class</span>=<span class="name">"popup__body"</span>>
+		&lt;div <span class="class">class</span>=<span class="name">"popup__content"</span>>
+			&lt;div <span class="class">class</span>=<span class="name">"popup_close"</span>>
+				&lt;div <span class="class">class</span>=<span class="name">"popup__title"</span>><span class="text">ВНИМАНИЕ!</span>&lt;/div>
+				&lt;div <span class="class">class</span>=<span class="name">"popup__text"</span>>&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+		</pre>
+        <h3>Footer</h3>
+        <p>Нижнее <b>Выдвижное меню</b> с технической поддержкой и политикой конфиденциальности</p>
+		<pre>
+&lt;div <span class="class">class</span>=<span class="name">"footer"</span>>
+	&lt;div <span class="class">class</span>=<span class="name">"container__footer"</span>>
+		&lt;div <span class="class">class</span>=<span class="name">"footer__inner"</span>>
+			&lt;span>&lt;/span>
+			&lt;span>&lt;/span>
+		&lt;/div>
+		&lt;div <span class="class">id</span>=<span class="name">"footerText"</span>>
+			&lt;ul>
+				&lt;li <span class="class">class</span>=<span class="name">"firstTextFooter"</span>>&lt;a <span class="class">href</span>=<span class="name"></span><span class="name">"#"</span>><span class="text">Политика конфиденциальности</span>&lt;/a>&lt;/li>
+				&lt;li <span class="class">class</span>=<span class="name">"secondTextFooter"</span>>&lt;a <span class="class">href</span>="#"><span class="text">Техническая поддержка</span>&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;/div>
+	&lt;/div>
+<span class="class">/div>				
+		</pre>
+        <h3>Script</h3>
+        <p><b>Скрипты</b> для работы приложения (открытие чего-либо)</p>
+		<pre>
+&lt;script>
+	<span class="nach">let</span> menutoggle = document.<span class="class">querySelector</span>(<span class="name">'.toggle'</span>);
+	menutoggle.<span class="class">onclick</span> = <span class="nach">function</span> () {
+		menutoggle.<span class="nach">classList</span>.<span class="class">toggle</span>(<span class="name">'active'</span>)
+	}
+	<span class="nach">let</span> footertoggle = document.<span class="class">querySelector</span>(<span class="name">'.container__footer'</span>);
+	footertoggle.<span class="class">onclick</span> = <span class="nach">function</span> () {
+		footertoggle.<span class="nach">classList</span>.<span class="class">toggle</span>(<span class="name">'active'</span>)
+	}
+	<span class="nach">let</span> attention = document.<span class="class">querySelector</span>(<span class="name">'.attention'</span>);
+	attention.<span class="class">onclick</span> = <span class="nach">function</span> () {
+		attention.<span class="nach">classList</span>.<span class="class">toggle</span>(<span class="name">'active'</span>)
+	}
+&lt;/script>
+<script>
+	function openMenu() {
+		document.getElementById("mainmenu").classList.togg('active');
+	}
+</script>
+		</pre>
+        <h2>Код CSS</h2>
+        <h3>Popup</h3>
+        <p>Рассмотрим <b>всплывающее окно</b> (popup) с внесением данных</p>
+		<pre class="pre2">
+<span class="class">.popup {</span>
+	position: fixed;
+	width: <span class="num">100</span><span class="name2">%</span>;
+	height: <span class="num">100</span><span class="name2">%</span>;
+	background-color: rgba<span class="num">(0, 0, 0, 0.8)</span>;
+	top: <span class="num">0</span>;
+	left: <span class="num">0</span>;
+<span class="class">}</span>
+
+<span class="class">.popup__body {</span>
+	min-height: <span class="num">100</span><span class="name2">%</span>;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: <span class="num">30</span><span class="name2">px</span> <span class="num">10</span><span class="name2">px</span>;
+<span class="class">}</span>
+
+<span class="class">.popup__content {</span>
+	background-color: <span class="num">#e6f1fb</span>;
+	color: <span class="num">#5b4961</span>;
+	max-width: <span class="num">800</span><span class="name2">px</span>;
+	padding: <span class="num">30</span><span class="name2">px</span> <span class="num">20</span><span class="name2">px</span>;
+	position: relative;
+	border-radius: <span class="num">10</span><span class="name2">px</span>;
+<span class="class">}</span>
+
+<span class="class">.popup_close {</span>
+	position: absolute;
+	right: <span class="num">10</span><span class="name2">px</span>;
+	top: <span class="num">10</span><span class="name2">px</span>;
+	font-size: <span class="num">16</span><span class="name2">px</span>;
+	color: <span class="num">#000</span>;
+	text-decoration: none;
+	font-family: <span class="name">"Roboto"</span>, sans-serif;
+<span class="class">}</span>
+	 </pre>
+
+    </body>
+</html>

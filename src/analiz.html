@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/analiz_style.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="logo">
+					<a class="logo__link" href="index.html">
+						<img class="logo__link-img" src="images/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<div id="mainmenu">
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="/">Аккаунт</a></li>
+							<li><a href="analiz.html">Анализы</a></li>
+							<li><a href="/">Новости</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+		
+
+	<div class="fone">
+
+		<div class="main">
+			<div class="map">	
+						
+				<span></span>
+				<span></span>
+				<span><button class="block1">Запись Анализов</button></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span><button class="block2">Сравнение Анализов</button></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span><button class="block3">Динамика Анализов</button></span>
+				<span></span>
+				<span></span>
+				</div>
+		</div>
+	</div>
+			
+	<div class="footer">
+		<div class="container__footer">
+			<div class="footer__inner">
+				<span></span>
+				<span></span>
+			</div>
+				<div id="footerText">
+					<ul>
+						<li class="firstTextFooter"><a href="#">Политика конфиденциальности</a></li>
+						<li class="secondTextFooter"><a href="#">Техническая поддержка</a></li>
+					</ul>
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="" class="popup_close">Х</a>
+						<div class="popup__title"><b>Запись Анализов</b></div>
+							<div class="popup__text">
+								<p>В данном разделе вы можете заполнить необходимые данные для дальнейших использований ваших данных</p>
+								<p>Выберите необходимый показатель:</p>
+								<select class="form-select" aria-label="Default select example">
+									<option value="1" >Онкомаркеры</option>
+								</select>
+								 <p>Заполните ваши данные:</p>
+								 <input>
+							</div>
+				</div>
+			</div>
+		</div>
+
+
+	<script>
+		let maptoggle = document.querySelector('.block1');
+		maptoggle.onclick = function () {
+			maptoggle.classList.toggle('active')
+		}
+		let menutoggle = document.querySelector('.toggle');
+		menutoggle.onclick = function () {
+			menutoggle.classList.toggle('active')
+		}
+		let footertoggle = document.querySelector('.container__footer');
+		footertoggle.onclick = function () {
+			footertoggle.classList.toggle('active')
+		}
+	</script>
+
+
+	<!-- <script>
+		function openMenu() {
+			document.getElementById("mainmenu").classList.toggle('active');
+		}
+	</script> -->
+
+
+			<!-- <script>
+				function myMap() {
+					document.getElementById("MainMap").classList.toggle('active');
+				}
+			</script> -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="js/main.js"></script>
+			
+
+
+
+
+
+		<!-- <div id="popup" class="popup">
+			<div class="popup_body">
+				<div class="popup_content">
+					<div class="popup_close">
+						<div class="popup_title">
+							<div class="popup_text">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+			</body>
+			
+			</html>
